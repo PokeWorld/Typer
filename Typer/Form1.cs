@@ -19,19 +19,32 @@ namespace Typer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (timer1.Enabled == true)
+            if (tmrNewMsg.Enabled == true)
             {
-                timer1.Stop();
+                tmrNewMsg.Stop();
+                lblTypingIndicator.Text = "Not Typing";
             }
             else
             {
-                timer1.Start();
+                tmrNewMsg.Start();
+                lblTypingIndicator.Text = "Typing...";
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             SendKeys.Send(textBox1.Text + "{ENTER}");
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help help = new Help();
+            help.Show();
         }
     }
 }

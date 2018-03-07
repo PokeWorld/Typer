@@ -117,10 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="tmrNewMsg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>136, 17</value>
-  </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Welcome to the Help Contents for Typer
+
+This is a short guide to show you how to use the program.
+
+First off, let's look at the interface.
+There is a menu bar at the top, then a typing indicator below it. Then below is a text box and a toggle button.
+The text box is where you put the contents of what you want to send, and then press the toggle button to start typing. Once you want it to stop, press it again. This is why the typing indicator is there.
+This is just a simple help guide. If you find a bug, or need some help, please submit an issue on GitHub
+http://github.com/pokeworld/typer</value>
+  </data>
 </root>
