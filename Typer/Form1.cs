@@ -21,11 +21,11 @@ namespace Typer
         {
             if (timer1.Enabled == true)
             {
-                timer1.Enabled = false;
+                timer1.Stop();
             }
             else
             {
-                timer1.Enabled = true;
+                timer1.Start();
             }
         }
 
