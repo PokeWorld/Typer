@@ -33,7 +33,7 @@ namespace Typer
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SendKeys.Send(textBox1.Text + "{ENTER}");
+            SendKeys.Send(textBox1.Text);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace Typer
         {
             Help help = new Help();
             help.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBox1.AppendText("{ENTER}");
         }
     }
 }
