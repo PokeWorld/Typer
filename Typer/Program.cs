@@ -14,6 +14,7 @@ namespace Typer
         [STAThread]
         static void Main()
         {
+            PresetManager.loadPreset(new PokeCord());
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

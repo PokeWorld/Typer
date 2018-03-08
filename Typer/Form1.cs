@@ -51,5 +51,15 @@ namespace Typer
         {
             textBox1.AppendText("{ENTER}");
         }
+
+        private void presetsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pokecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = PresetManager.getMessage("PokeCord");
+        }
     }
 }

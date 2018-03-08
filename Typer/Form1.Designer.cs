@@ -38,6 +38,8 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.presetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pokecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +81,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.presetsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(406, 24);
@@ -114,6 +117,22 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // presetsToolStripMenuItem
+            // 
+            this.presetsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pokecordToolStripMenuItem});
+            this.presetsToolStripMenuItem.Name = "presetsToolStripMenuItem";
+            this.presetsToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.presetsToolStripMenuItem.Text = "Presets";
+            this.presetsToolStripMenuItem.Click += new System.EventHandler(this.presetsToolStripMenuItem_Click);
+            // 
+            // pokecordToolStripMenuItem
+            // 
+            this.pokecordToolStripMenuItem.Name = "pokecordToolStripMenuItem";
+            this.pokecordToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pokecordToolStripMenuItem.Text = "Pokecord";
+            this.pokecordToolStripMenuItem.Click += new System.EventHandler(this.pokecordToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -158,6 +177,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem presetsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pokecordToolStripMenuItem;
     }
 }
 
