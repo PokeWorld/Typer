@@ -11,12 +11,14 @@ namespace Typer
     {
         string name { get;  }
         string message { get; }
+        int interval { get; }
     }
 
     public class PokeCord : IPreset
     {
         public string name { get { return "PokeCord"; } }
         public string message { get { return "a{ENTER}"; } }
+        public int interval { get { return 1000; } }
     }
 
     public static class PresetManager
@@ -43,6 +45,14 @@ namespace Typer
                 if (preset.name == presetName) return preset.message;
             }
             return null;
+        }
+        public static int getInterval(string presetName)
+        {
+            foreach (IPreset preset in presets)
+            {
+                if (preset.name == presetName) return preset.interval;
+            }
+            return 1;
         }
     }
 }

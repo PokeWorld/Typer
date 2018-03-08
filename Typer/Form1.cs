@@ -19,6 +19,7 @@ namespace Typer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            tmrNewMsg.Interval = (int)numericUpDown1.Value;
             if (tmrNewMsg.Enabled == true)
             {
                 tmrNewMsg.Stop();
@@ -60,6 +61,7 @@ namespace Typer
         private void pokecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox1.Text = PresetManager.getMessage("PokeCord");
+            numericUpDown1.Value = PresetManager.getInterval("PokeCord");
         }
     }
 }
